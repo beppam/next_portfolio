@@ -34,7 +34,7 @@ export default function Home() {
       <Sidebar />
       <div className="z-10 flex-col max-w-5xl w-full text-sm lg:flex">
         <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-          Hey, I'm Yaswanth &#128075;
+          Hey, I&apos;m Yaswanth <span>&#128075;</span>
         </h1>
         <p className="prose prose-neutral dark:prose-invert mb-2">
           {`I'm a developer and a part-time designer. I currently
@@ -75,7 +75,7 @@ export default function Home() {
           />
         </div>
         <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-          Projects &#128640;
+          Projects <span>&#128640;</span>
         </h1>
         <p className="prose prose-neutral dark:prose-invert mb-2">
           {`Here are some of my client works. You can `}
