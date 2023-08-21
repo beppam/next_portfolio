@@ -40,7 +40,7 @@ export default function Projects() {
                 name="Dri"
                 link='https://downloadstudios.in/'
                 description='Your Friendly Neighbourhood Entertainment Studio'
-                img={'https://github.com/beppam.png'}
+                img={'https://github.com/lightbringerdev.png'}
               />
           </div>
         </div>

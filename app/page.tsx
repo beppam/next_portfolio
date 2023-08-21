@@ -19,7 +19,7 @@ export default function Home() {
 
   const fetchReposCount = async () => {
     try {
-      const data = await getRequest('https://api.github.com/users/beppam/repos');
+      const data = await getRequest('https://api.github.com/users/lightbringerdev/repos');
       setReposCount(data.length);
     } catch (error) {
       console.error('Error fetching repo data:', error);
@@ -34,7 +34,7 @@ export default function Home() {
       <Sidebar />
       <div className="z-10 flex-col max-w-5xl w-full text-sm lg:flex">
         <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-          Hey, I'm Yaswanth 👋
+          Hey, I'm Yaswanth &#128075;
         </h1>
         <p className="prose prose-neutral dark:prose-invert mb-2">
           {`I'm a developer and a part-time designer. I currently
@@ -50,12 +50,12 @@ export default function Home() {
         </p>
         <div className="my-8 flex flex-col sm:flex-row space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 w-full">
           <Channel
-            img={'https://github.com/beppam.png'}
+            img={'https://github.com/lightbringerdev.png'}
             icon={GitHub}
-            name="@beppam"
+            name="@lightbringerdev"
             count={reposCount.toString()}
             countType={"repos"}
-            link='https://github.com/beppam'
+            link='https://github.com/lightbringerdev'
           />
           <Channel
             img={Yashu}
@@ -75,7 +75,7 @@ export default function Home() {
           />
         </div>
         <h1 className="font-bold text-2xl mb-8 tracking-tighter">
-          Projects 🚀
+          Projects &#128640;
         </h1>
         <p className="prose prose-neutral dark:prose-invert mb-2">
           {`Here are some of my client works. You can `}
