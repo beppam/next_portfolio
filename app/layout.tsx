@@ -38,7 +38,7 @@ export default function RootLayout({
         graphik.variable
       )}
     >
-      <body className="mx-4 mt-8 lg:mx-auto">{children}</body>
+      <body className="mx-2 mt-8 lg:mx-auto">{children}</body>
     </html>
   );
 }

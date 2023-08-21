@@ -30,7 +30,7 @@ export default function Home() {
   fetchReposCount();
 
   return (
-    <main className="flex min-h-screen flex-col items-center px-24 py-12">
+    <main className="flex min-h-screen flex-col items-center px-6 lg:px-24 py-12">
       <Sidebar />
       <div className="z-10 flex-col max-w-5xl w-full text-sm lg:flex">
         <h1 className="font-bold text-2xl mb-8 tracking-tighter">
