@@ -8,7 +8,17 @@ import Grainscape from "public/images/Grainscape.svg";
 import getRequest from '../utility';
 
 export default function Projects() {
-  const [repos, setRepos] = useState([]);
+  interface Repo {
+    owner: {
+      avatar_url: string;
+    };
+    name: string;
+    html_url: string;
+    description: string;
+    img: string;
+    id: string;
+  }
+  const [repos, setRepos] = useState<Repo[]>([]);
 
   const fetchRepos = async () => {
     try {
@@ -47,12 +57,18 @@ export default function Projects() {
                 description='Get your food as Natural as it can be'
                 img={Grainscape}
               />
+              <Project
+                name="Red Sea Fox"
+                link='not-live'
+                description='Red Sea Fox was a dynamic online learning platform designed to empower students with practical skills in various domains. With a focus on recorded sessions, the platform provided a flexible and accessible way for learners to enhance their expertise in areas such as marketing and beyond.'
+                img={repos[0]?.owner.avatar_url}
+              />
           </div>
           <h1 className="font-bold text-2xl mb-2 mt-4 tracking-tighter">
             Mini Projects
           </h1>
           <div className="my-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {repos.map((repo:any) => (
+            {repos.map((repo:Repo) => (
               <Project
                 key={repo.id}
                 name={repo.name}
